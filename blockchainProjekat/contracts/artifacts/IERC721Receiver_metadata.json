@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.5.10+commit.5a6ea5b1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface for any contract that wants to support safeTransfers\r from ERC721 asset contracts.\r",
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"details": "The ERC721 smart contract calls this function on the recipient\r after a `safeTransfer`. This function MUST return the function selector,\r otherwise the caller will revert the transaction. The selector to be\r returned can be obtained as `this.onERC721Received.selector`. This\r function MAY throw to revert and reject the transfer.\r Note: the ERC721 contract address is always the message sender.\r",
+					"params": {
+						"data": "Additional data with no specified format\r",
+						"from": "The address which previously owned the token\r",
+						"operator": "The address which called `safeTransferFrom` function\r",
+						"tokenId": "The NFT identifier which is being transferred\r"
+					},
+					"return": "bytes4 `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`\r"
+				}
+			},
+			"title": "ERC721 token receiver interface\r"
+		},
+		"userdoc": {
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"notice": "Handle the receipt of an NFT\r"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC721Full.sol": "IERC721Receiver"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC721Full.sol": {
+			"keccak256": "0xf335fba022c592d6c02b200494208a205e9767903f3f3d80965db44b7b7d5902",
+			"urls": [
+				"bzzr://5c0082e3403ec4bbc8be5fcf161cbc8094b0714194fba6cce5d99aa8bdfaf0cd",
+				"dweb:/ipfs/QmdoVaAGgtSiPK3V2naqrfdAc7JqwNX9VYrtJH1KbDbm6m"
+			]
+		}
+	},
+	"version": 1
+}

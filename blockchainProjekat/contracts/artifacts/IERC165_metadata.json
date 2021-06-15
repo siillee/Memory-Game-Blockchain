@@ -1,0 +1,62 @@
+{
+	"compiler": {
+		"version": "0.5.10+commit.5a6ea5b1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface of the ERC165 standard, as defined in the\r [EIP](https://eips.ethereum.org/EIPS/eip-165).\r  * Implementers can declare support of contract interfaces, which can then be\r queried by others (`ERC165Checker`).\r  * For an implementation, see `ERC165`.\r",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by\r `interfaceId`. See the corresponding\r [EIP section](https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified)\r to learn more about how these ids are created.\r      * This function call must use less than 30 000 gas.\r"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC721Full.sol": "IERC165"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC721Full.sol": {
+			"keccak256": "0xf335fba022c592d6c02b200494208a205e9767903f3f3d80965db44b7b7d5902",
+			"urls": [
+				"bzzr://5c0082e3403ec4bbc8be5fcf161cbc8094b0714194fba6cce5d99aa8bdfaf0cd",
+				"dweb:/ipfs/QmdoVaAGgtSiPK3V2naqrfdAc7JqwNX9VYrtJH1KbDbm6m"
+			]
+		}
+	},
+	"version": 1
+}
